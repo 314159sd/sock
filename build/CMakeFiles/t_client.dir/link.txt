@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/t_client.dir/t_client.cpp.o -o t_client 

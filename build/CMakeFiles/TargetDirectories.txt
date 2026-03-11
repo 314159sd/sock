@@ -1,0 +1,6 @@
+/home/yoyo/a_tcp/build/CMakeFiles/server.dir
+/home/yoyo/a_tcp/build/CMakeFiles/client.dir
+/home/yoyo/a_tcp/build/CMakeFiles/t_server.dir
+/home/yoyo/a_tcp/build/CMakeFiles/t_client.dir
+/home/yoyo/a_tcp/build/CMakeFiles/edit_cache.dir
+/home/yoyo/a_tcp/build/CMakeFiles/rebuild_cache.dir
