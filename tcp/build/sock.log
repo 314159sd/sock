@@ -1,0 +1,10 @@
+2026-03-06 16:31:57 ERROR /home/yoyo/tcp/socket/socket.cpp:53 error: 111 ,Connection refused
+2026-03-06 16:33:11 DEBUG /home/yoyo/tcp/socket/socket.cpp:53 error: 111 ,Connection refused
+2026-03-06 16:33:36 DEBUG /home/yoyo/tcp/socket/socket.cpp:53 error: 111 ,Connection refused
+2026-03-06 16:40:56 DEBUG /home/yoyo/tcp/socket/socket.cpp:6 name=jack age=18
+2026-03-06 16:40:56 DEBUG /home/yoyo/tcp/socket/socket.cpp:54 error: 111 ,Connection refused
+2026-03-06 16:43:28 DEBUG /home/yoyo/tcp/client.cpp:5 name=jack age=18
+2026-03-06 16:45:35 DEBUG /home/yoyo/tcp/client.cpp:5 name=jack age=18
+2026-03-06 16:46:21 DEBUG /home/yoyo/tcp/client.cpp:5 name=jack age=18
+2026-03-06 16:46:58 DEBUG /home/yoyo/tcp/client.cpp:5 name=jack age=18
+2026-03-06 16:47:00 DEBUG /home/yoyo/tcp/client.cpp:5 name=jack age=18

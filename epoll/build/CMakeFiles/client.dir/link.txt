@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/client.dir/client.cpp.o -o client   -L/home/yoyo/net/epoll/lib  -Wl,-rpath,/home/yoyo/net/epoll/lib ../lib/libdata.so 

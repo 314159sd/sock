@@ -1,0 +1,4 @@
+/home/yoyo/net/udp/build/CMakeFiles/server.dir
+/home/yoyo/net/udp/build/CMakeFiles/client.dir
+/home/yoyo/net/udp/build/CMakeFiles/edit_cache.dir
+/home/yoyo/net/udp/build/CMakeFiles/rebuild_cache.dir

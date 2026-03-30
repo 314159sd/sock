@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,liblog.so -o ../../../../lib/liblog.so CMakeFiles/log.dir/Logger.cpp.o   -L/home/yoyo/tcp/lib 

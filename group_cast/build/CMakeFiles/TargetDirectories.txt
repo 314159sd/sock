@@ -1,0 +1,4 @@
+/home/yoyo/net/group_cast/build/CMakeFiles/server.dir
+/home/yoyo/net/group_cast/build/CMakeFiles/client.dir
+/home/yoyo/net/group_cast/build/CMakeFiles/edit_cache.dir
+/home/yoyo/net/group_cast/build/CMakeFiles/rebuild_cache.dir

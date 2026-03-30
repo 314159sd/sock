@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/server.dir/server.cpp.o -o server   -L/home/yoyo/net/epoll/lib  -Wl,-rpath,/home/yoyo/net/epoll/lib ../lib/libdata.so 

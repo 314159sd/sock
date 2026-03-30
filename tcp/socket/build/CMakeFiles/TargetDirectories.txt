@@ -1,0 +1,3 @@
+/home/yoyo/tcp/socket/build/CMakeFiles/socket.dir
+/home/yoyo/tcp/socket/build/CMakeFiles/edit_cache.dir
+/home/yoyo/tcp/socket/build/CMakeFiles/rebuild_cache.dir

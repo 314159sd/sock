@@ -1,0 +1,6 @@
+/home/yoyo/net/backup/build/CMakeFiles/server.dir
+/home/yoyo/net/backup/build/CMakeFiles/server1.dir
+/home/yoyo/net/backup/build/CMakeFiles/client.dir
+/home/yoyo/net/backup/build/CMakeFiles/client1.dir
+/home/yoyo/net/backup/build/CMakeFiles/edit_cache.dir
+/home/yoyo/net/backup/build/CMakeFiles/rebuild_cache.dir

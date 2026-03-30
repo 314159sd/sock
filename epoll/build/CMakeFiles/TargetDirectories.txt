@@ -1,0 +1,7 @@
+/home/yoyo/net/epoll/build/CMakeFiles/server.dir
+/home/yoyo/net/epoll/build/CMakeFiles/client.dir
+/home/yoyo/net/epoll/build/CMakeFiles/edit_cache.dir
+/home/yoyo/net/epoll/build/CMakeFiles/rebuild_cache.dir
+/home/yoyo/net/epoll/build/protobuff/CMakeFiles/data.dir
+/home/yoyo/net/epoll/build/protobuff/CMakeFiles/edit_cache.dir
+/home/yoyo/net/epoll/build/protobuff/CMakeFiles/rebuild_cache.dir

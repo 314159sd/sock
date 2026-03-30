@@ -1,0 +1,10 @@
+/home/yoyo/tcp/out/build/gcc/CMakeFiles/server.dir
+/home/yoyo/tcp/out/build/gcc/CMakeFiles/client.dir
+/home/yoyo/tcp/out/build/gcc/CMakeFiles/edit_cache.dir
+/home/yoyo/tcp/out/build/gcc/CMakeFiles/rebuild_cache.dir
+/home/yoyo/tcp/out/build/gcc/socket/CMakeFiles/socket.dir
+/home/yoyo/tcp/out/build/gcc/socket/CMakeFiles/edit_cache.dir
+/home/yoyo/tcp/out/build/gcc/socket/CMakeFiles/rebuild_cache.dir
+/home/yoyo/tcp/out/build/gcc/log/CMakeFiles/log.dir
+/home/yoyo/tcp/out/build/gcc/log/CMakeFiles/edit_cache.dir
+/home/yoyo/tcp/out/build/gcc/log/CMakeFiles/rebuild_cache.dir

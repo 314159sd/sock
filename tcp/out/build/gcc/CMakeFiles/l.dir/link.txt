@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/l.dir/log.cpp.o -o ../../../build/l   -L/home/yoyo/tcp/lib 
