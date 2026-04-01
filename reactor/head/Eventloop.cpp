@@ -1,12 +1,14 @@
 #include "Eventloop.h"
 
-Eventloop::Eventloop() : ep_(new Epoll)
+Eventloop::Eventloop() : ep_(new Epoll), thread_pool_(new Thread_pool)
 {
+    thread_pool_->Start();
 }
 
 Eventloop::~Eventloop()
 {
     delete ep_;
+    delete thread_pool_;
 }
 
 void Eventloop::run()
@@ -14,7 +16,6 @@ void Eventloop::run()
     while (true)
     {
         auto channels = ep_->loop(-1);
-        // std::cout << channels.size() <<std::endl;
         for (auto &ch : channels)
         {
             ch->handleevent();
@@ -25,4 +26,9 @@ void Eventloop::run()
 Epoll *Eventloop::ep()
 {
     return ep_;
+}
+
+Thread_pool *Eventloop::thread_pool()
+{
+    return thread_pool_;
 }

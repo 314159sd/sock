@@ -1,5 +1,6 @@
 #include "Channel.h"
-
+#include <epoll.h>
+#include <Eventloop.h>
 /*
 class Channel
 {
@@ -25,8 +26,7 @@ public:
     uint32_t revent();
 }
 */
-
-Channel::Channel(int fd, Epoll *ep) : fd_(fd), ep_(ep)
+Channel::Channel(int fd, Epoll *ep) : fd_(fd), ep_(ep), loop_(new Eventloop)
 {
 }
 
@@ -83,17 +83,18 @@ void Channel::handleevent()
     {
         readcallback_();
     }
-    else{
+    else
+    {
         std::cout << "hello" << std::endl;
     }
 }
 
 void Channel::newconnect(Socket &sock)
 {
-    
-    InetAddress ac_addr{"0.0.0.0", 8080};
-    Socket *ac_sock = new Socket(sock.accept(ac_addr));
-    std::cout << "Successful connection from " << inet_ntoa(ac_addr.getAddr().sin_addr) << ":" << ac_addr.getAddr().sin_port << std::endl;
+
+    // InetAddress ac_addr{"0.0.0.0", 8080};
+    Socket *ac_sock = new Socket(sock.accept(*ac_addr));
+    std::cout << "Successful connection from " << inet_ntoa(ac_addr->getAddr().sin_addr) << ":" << ntohs(ac_addr->getAddr().sin_port) << std::endl;
     Channel *ac_ch = new Channel(ac_sock->fd(), ep_);
     ac_ch->setcallback(std::bind(&Channel::onmessage, ac_ch));
     ac_ch->setET();
@@ -103,19 +104,23 @@ void Channel::newconnect(Socket &sock)
 void Channel::onmessage()
 {
     char buff[1024];
-
     bzero(buff, sizeof(buff));
     ssize_t size = read(fd(), buff, sizeof(buff));
     if (size > 0)
     {
-        std::cout << buff << std::endl;
-        write(fd(), buff, size);
+        loop_->thread_pool()->add_task([this, buff, size]()
+                                       {
+                                        std::cout << "[" << fd() << "]: " << buff << std::endl;
+                                        // std::cout << "Thread " << std::this_thread::get_id() << " processing message: " << buff << std::endl;
+                                        write(fd(), buff, size); });
     }
     else if (size < 0 and (errno == EAGAIN or errno == EWOULDBLOCK))
     {
     }
     else if (size == 0)
     {
+        ep_->removechannel(this);
+        close(fd());
         // std::cout << "client close" << std::endl;
     }
     else

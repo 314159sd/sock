@@ -51,6 +51,17 @@ void Epoll::updatechannel(Channel *ch)
     }
 }
 
+void Epoll::removechannel(Channel *ch)
+{
+    if (ch->inepoll())
+    {
+        epoll_ctl(epoll_fd_, EPOLL_CTL_DEL, ch->fd(), nullptr);
+        ch->setinepoll(false);
+    }
+    else{
+        std::cout << "channel not in epoll" << std::endl;
+    }
+}
 std::vector<Channel *> Epoll::loop(int timeout)
 {
 

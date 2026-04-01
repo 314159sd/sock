@@ -1,19 +1,25 @@
 #pragma once
-#include "epoll.h"
+
 #include "InetAddress.h"
 #include <functional>
 #include "Socket.h"
+#include "thread_pool.h"
+#include <sys/epoll.h>
 
 class Epoll;
+class Eventloop;
 class Channel
 {
 private:
     int fd_;
-    Epoll *ep_{nullptr};
+    Epoll *ep_;
+    Eventloop *loop_;
     bool inepoll_{false};
     uint32_t event_;
     uint32_t revent_;
     std::function<void()> readcallback_;
+
+    InetAddress *ac_addr = new InetAddress("0.0.0.0", 8080);
 
 public:
     Channel(int fd, Epoll *ep);

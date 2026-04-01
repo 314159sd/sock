@@ -299,6 +299,54 @@ head/epoll.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/head/epoll.cpp.s
 .PHONY : head/epoll.cpp.s
 
+head/s_tcp.o: head/s_tcp.cpp.o
+.PHONY : head/s_tcp.o
+
+# target to build an object file
+head/s_tcp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/head/s_tcp.cpp.o
+.PHONY : head/s_tcp.cpp.o
+
+head/s_tcp.i: head/s_tcp.cpp.i
+.PHONY : head/s_tcp.i
+
+# target to preprocess a source file
+head/s_tcp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/head/s_tcp.cpp.i
+.PHONY : head/s_tcp.cpp.i
+
+head/s_tcp.s: head/s_tcp.cpp.s
+.PHONY : head/s_tcp.s
+
+# target to generate assembly for a file
+head/s_tcp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/head/s_tcp.cpp.s
+.PHONY : head/s_tcp.cpp.s
+
+head/thread_pool.o: head/thread_pool.cpp.o
+.PHONY : head/thread_pool.o
+
+# target to build an object file
+head/thread_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/head/thread_pool.cpp.o
+.PHONY : head/thread_pool.cpp.o
+
+head/thread_pool.i: head/thread_pool.cpp.i
+.PHONY : head/thread_pool.i
+
+# target to preprocess a source file
+head/thread_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/head/thread_pool.cpp.i
+.PHONY : head/thread_pool.cpp.i
+
+head/thread_pool.s: head/thread_pool.cpp.s
+.PHONY : head/thread_pool.s
+
+# target to generate assembly for a file
+head/thread_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/head/thread_pool.cpp.s
+.PHONY : head/thread_pool.cpp.s
+
 server.o: server.cpp.o
 .PHONY : server.o
 
@@ -352,6 +400,12 @@ help:
 	@echo "... head/epoll.o"
 	@echo "... head/epoll.i"
 	@echo "... head/epoll.s"
+	@echo "... head/s_tcp.o"
+	@echo "... head/s_tcp.i"
+	@echo "... head/s_tcp.s"
+	@echo "... head/thread_pool.o"
+	@echo "... head/thread_pool.i"
+	@echo "... head/thread_pool.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

@@ -11,6 +11,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/data.dir/head/Socket.cpp.o.d"
   "CMakeFiles/data.dir/head/epoll.cpp.o"
   "CMakeFiles/data.dir/head/epoll.cpp.o.d"
+  "CMakeFiles/data.dir/head/s_tcp.cpp.o"
+  "CMakeFiles/data.dir/head/s_tcp.cpp.o.d"
+  "CMakeFiles/data.dir/head/thread_pool.cpp.o"
+  "CMakeFiles/data.dir/head/thread_pool.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
