@@ -1,5 +1,5 @@
-/home/yoyo/net/reactor/build/CMakeFiles/data.dir
-/home/yoyo/net/reactor/build/CMakeFiles/server.dir
-/home/yoyo/net/reactor/build/CMakeFiles/client.dir
-/home/yoyo/net/reactor/build/CMakeFiles/edit_cache.dir
-/home/yoyo/net/reactor/build/CMakeFiles/rebuild_cache.dir
+/home/yoyo/git/sock/reactor/build/CMakeFiles/data.dir
+/home/yoyo/git/sock/reactor/build/CMakeFiles/server.dir
+/home/yoyo/git/sock/reactor/build/CMakeFiles/client.dir
+/home/yoyo/git/sock/reactor/build/CMakeFiles/edit_cache.dir
+/home/yoyo/git/sock/reactor/build/CMakeFiles/rebuild_cache.dir

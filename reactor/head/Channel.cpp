@@ -32,6 +32,9 @@ Channel::Channel(int fd, Epoll *ep) : fd_(fd), ep_(ep), loop_(new Eventloop)
 
 Channel::~Channel()
 {
+    delete loop_;
+    delete ep_;
+    delete ac_addr;
 }
 void Channel::enableIN()
 {

@@ -1,7 +1,7 @@
 #include "s_tcp.h"
 
 
-#define MAX_EVENT 1024
+// #define MAX_EVENT 1024
 
 int main()
 {

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../lib/libdata.pdb"
-  "../lib/libdata.so"
+  "/home/yoyo/git/sock/reactor/lib/libdata.pdb"
+  "/home/yoyo/git/sock/reactor/lib/libdata.so"
   "CMakeFiles/data.dir/head/Channel.cpp.o"
   "CMakeFiles/data.dir/head/Channel.cpp.o.d"
   "CMakeFiles/data.dir/head/Eventloop.cpp.o"

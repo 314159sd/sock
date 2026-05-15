@@ -20,7 +20,7 @@ TCP::TCP(bool reuse_addr, bool no_delay, bool no_block)
     sock.listen();
 
     Eventloop epoll;
-    Channel *sock_ch = new Channel(sock_fd, epoll.ep());
+    sock_ch = new Channel(sock_fd, epoll.ep());
     sock_ch->setcallback(std::bind(&Channel::newconnect, sock_ch, std::ref(sock)));
     sock_ch->enableIN();
 
@@ -30,5 +30,6 @@ TCP::TCP(bool reuse_addr, bool no_delay, bool no_block)
 TCP::~TCP()
 {
     close(sock_fd);
+    delete sock_ch;
 }
 

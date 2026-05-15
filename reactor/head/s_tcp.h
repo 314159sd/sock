@@ -17,6 +17,7 @@ class TCP
     bool reuse_addr;
     bool no_delay;
     bool no_block;
+    Channel *sock_ch;
 
 public:
     TCP(bool reuse_addr = true, bool no_delay = true, bool no_block = true);

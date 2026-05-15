@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/client.dir/client.cpp.o -o client  -Wl,-rpath,/home/yoyo/net/reactor/lib ../lib/libdata.so 
+/usr/bin/c++ CMakeFiles/client.dir/client.cpp.o -o client  -Wl,-rpath,/home/yoyo/git/sock/reactor/lib /home/yoyo/git/sock/reactor/lib/libdata.so 

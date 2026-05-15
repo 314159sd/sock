@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/server.dir/server.cpp.o -o server  -Wl,-rpath,/home/yoyo/net/reactor/lib ../lib/libdata.so 
+/usr/bin/c++ CMakeFiles/server.dir/server.cpp.o -o server  -Wl,-rpath,/home/yoyo/git/sock/reactor/lib /home/yoyo/git/sock/reactor/lib/libdata.so 

@@ -37,7 +37,8 @@ Epoll::~Epoll()
 
 void Epoll::updatechannel(Channel *ch)
 {
-    struct epoll_event event;
+    struct epoll_event event{};
+
     event.events = ch->event();
     event.data.ptr = ch;
     if (ch->inepoll())

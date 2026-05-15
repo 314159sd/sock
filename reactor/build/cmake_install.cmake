@@ -1,4 +1,4 @@
-# Install script for directory: /home/yoyo/net/reactor
+# Install script for directory: /home/yoyo/git/sock/reactor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yoyo/net/reactor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yoyo/git/sock/reactor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
